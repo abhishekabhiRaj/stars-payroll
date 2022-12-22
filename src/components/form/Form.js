@@ -35,7 +35,7 @@ const FormField = () => {
         password: ""
       });
     } else {
-      window.alert("Currently second Modal is commented. Please fill the data to store in redux...")
+      window.alert("Currently second Modal is commented. Please fill the data to store in redux...");
     }
   }
   return (
@@ -82,7 +82,7 @@ const FormField = () => {
           <span className="mx-auto __font-extra-small">SIGN UP NOW</span>
         </Button>
         {/* Currently second Modal is disabled */}
-        {/* <ModalPopUp title="SIGN UP NOW" onClick={() => submitFormData()} className="__btn-start" /> */}
+        {/* <ModalPopUp title="SIGN UP NOW" onClick={() => console.log("Modal clicked")} className="__btn-start" /> */}
         <p className="mt-2 mb-2 text-center __font-extra-small">or</p>
         <div className="d-flex justify-content-center">
           <section className="__icon-btn" onClick={() => window.alert("Google Login Button")}>

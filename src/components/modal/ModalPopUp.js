@@ -6,11 +6,7 @@ import { data } from "../../assets/data/data";
 const ModalPopUp = ({ title, className }) => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
-  const submitAlert = () => {
-    window.alert("Data saved in redux...");
-    handleClose();
-  }
+  const handleShow = () => setShow(true); 
   return (
     <div>
       <Button className={className} onClick={handleShow}>
@@ -20,16 +16,16 @@ const ModalPopUp = ({ title, className }) => {
         <Modal.Body>
           <Container>
             <Row>
-                <Col className="d-flex justify-content-center"> {data[0]["icon"]["checkIcon"]} </Col>
-                <p className="__roboto-flex-500 text-center m-0 mt-2 __font-small">Account setup successful</p>
-                <p className="__roboto-font-300 text-center __font-extra-small">
-                    Your Stars Payroll account has been successfully
-                    created. Please check the verification link which 
-                    is sent on your mail.
-                </p>
-                          <Button className="__btn-start" onClick={handleClose}>
-                              <span className="__title text-center mx-auto">Go To Dashboard</span>
-                          </Button>
+              <Col className="d-flex justify-content-center"> {data[0]["icon"]["checkIcon"]} </Col>
+              <p className="__roboto-flex-500 text-center m-0 mt-2 __font-small">Account setup successful</p>
+              <p className="__roboto-font-300 text-center __font-extra-small">
+                Your Stars Payroll account has been successfully
+                created. Please check the verification link which
+                is sent on your mail.
+              </p>
+              <Button className="__btn-start" onClick={handleClose}>
+                <span className="__title text-center mx-auto">Go To Dashboard</span>
+              </Button>
             </Row>
           </Container>
         </Modal.Body>
